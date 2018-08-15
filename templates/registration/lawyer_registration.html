@@ -1,0 +1,6 @@
+<form action="{% url 'lawyer:lawyer_list' %}" method="post">
+	{% csrf_token %}
+    {{ category_form.as_p }}
+    {{ lawyer_form.as_p }}
+    <input type="submit" value="Register">
+</form>
